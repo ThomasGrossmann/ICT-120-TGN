@@ -23,11 +23,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1PxrbPrf1JV52W34fjU3zwvxJc8" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="C:/tools/php73/php.exe" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -41,6 +42,14 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="ICT-120" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$" port="8080">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$" port="8080">
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -52,6 +61,7 @@
       <option name="presentableId" value="Default" />
       <updated>1566826659598</updated>
       <workItem from="1566826661660" duration="1314000" />
+      <workItem from="1568294849755" duration="3923000" />
     </task>
     <servers />
   </component>
@@ -63,7 +73,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
