@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Lecture champ texte</title>
+</head>
+<body>
+<form id="form">
+    <input type="text" name="texte" value="" id="inptext"/>
+    <input type="button" value="GO" id="btngo"/>
+</form>
+</body>
+<script>
+    function btngoClick() {
+        if (inptext.value != ""){
+            alert(''+inptext.value)
+            form.submit(inptext.value)
+        }else{
+            alert('Attention !')
+        }
+    }
+    btngo.addEventListener('click', btngoClick)
+</script>
+</html>
