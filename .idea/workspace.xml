@@ -17,6 +17,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -29,6 +31,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="C:/tools/php73/php.exe" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -65,7 +68,7 @@
       <workItem from="1569239871875" duration="5860000" />
       <workItem from="1569505786196" duration="714000" />
       <workItem from="1569506738470" duration="2903000" />
-      <workItem from="1569844340572" duration="261000" />
+      <workItem from="1569844340572" duration="7186000" />
     </task>
     <servers />
   </component>
