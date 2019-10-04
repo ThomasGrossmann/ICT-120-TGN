@@ -30,7 +30,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/tools/php73/php.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tools/php73/php.exe" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RunDashboard">
@@ -69,6 +69,7 @@
       <workItem from="1569505786196" duration="714000" />
       <workItem from="1569506738470" duration="2903000" />
       <workItem from="1569844340572" duration="7186000" />
+      <workItem from="1570188844732" duration="5381000" />
     </task>
     <servers />
   </component>
