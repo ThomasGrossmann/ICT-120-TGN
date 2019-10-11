@@ -4,7 +4,7 @@
     Date : 04.10.2019
 */
 document.addEventListener('DOMContentLoaded', init)
-function init() {
+function init() {                                                   //Initialisation de toutes les fonctions
     bluetraced.addEventListener('click', Div1Click)
     clearDiv1.addEventListener('click', ClearDiv1)
     fontArial.addEventListener('mouseover', FontArial)
