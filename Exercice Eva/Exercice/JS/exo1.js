@@ -15,6 +15,7 @@ function init() {
     partez.style.display="none"
     avosmarques.addEventListener('click', AVosMarques)
     pret.addEventListener('click', Pret)
+    partez.addEventListener('click', Partez)
 }
 
 function Div1Click() {
@@ -61,7 +62,7 @@ function Initiales() {
 }
 
 function AVosMarques() {
-    avosmarque.disabled = true
+    avosmarques.disabled = true
     pret.disabled = false
     partez.style.display = "inline"
     partez.disabled = true
@@ -69,10 +70,27 @@ function AVosMarques() {
 
 }
 
-/*function Pret() {
+function Pret() {
     avosmarques.style.display = "none"
     pret.disabled = true
     partez.disabled = false
     myImage1.src="Images/set.png"
 }
- */
+
+function Partez() {
+    avosmarques.style.display = "none"
+    pret.style.display = "none"
+    partez.disabled = true
+    myImage1.src="Images/go.png"
+    setTimeout(
+        () => {
+            myImage1.src="Images/empty.png"
+            avosmarques.style.display = "inline"
+            avosmarques.disabled = false
+            pret.style.display = "inline"
+            partez.style.display = "none"
+        },
+        3 * 1000
+    );
+
+}
