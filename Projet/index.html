@@ -4,16 +4,25 @@
     <meta charset="UTF-8">
     <title>Hébergements / Zoning B</title>
     <link rel="stylesheet" type="text/css" href="CSS/Projet_CSS.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 <body>
     <div class="headfoot">
         <h1>Hébergements -- Voyage d'études</h1>
     </div>
     <div class="headfoot">
-        <button id="heb" class="button"><span>Hébergements</span></button>
-        <button id="act" class="button"><span>Activités</span></button>
-        <button id="tra" class="button"><span>Transports</span></button>
-        <button id="par" class="button"><span>Participants</span></button>
+        <div class="btn-group btn-group-justified">
+            <a href="#" class="btn btn-primary" data-toggle="collapse" data-target="#rect">Hébergements</a>
+            <a href="#" class="btn btn-primary">Activités</a>
+            <a href="#" class="btn btn-primary">Transports</a>
+            <a href="#" class="btn btn-primary">Participants</a>
+        </div>
+        <div id="rect" disabled="true">
+            TEST
+        </div>
     </div>
 </body>
+<script src="JS/Projet_JS.js"></script>
 </html>
