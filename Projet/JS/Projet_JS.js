@@ -5,8 +5,5 @@
 */
 document.addEventListener('DOMContentLoaded', init)
 function init() {
-    heb.addEventListener('click', clickHebergement())
-}
-function clickHebergement() {
-    content.style.display = "block"
+
 }

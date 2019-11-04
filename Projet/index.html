@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Hébergements / Zoning B</title>
     <link rel="stylesheet" type="text/css" href="CSS/Projet_CSS.css">
+    <script src="JS/Projet_JS.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -14,15 +15,28 @@
     </div>
     <div class="headfoot">
         <div class="btn-group btn-group-justified">
-            <a href="#" class="btn btn-primary" data-toggle="collapse" data-target="#rect">Hébergements</a>
-            <a href="#" class="btn btn-primary">Activités</a>
-            <a href="#" class="btn btn-primary">Transports</a>
-            <a href="#" class="btn btn-primary">Participants</a>
+            <a href="#" id="heb" class="btn btn-primary buttons" data-toggle="collapse" data-target="#collapse">Hébergements</a>
+            <a href="#" class="btn btn-primary buttons">Activités</a>
+            <a href="#" class="btn btn-primary buttons">Transports</a>
+            <a href="#" class="btn btn-primary buttons">Participants</a>
         </div>
-        <div id="rect" disabled="true">
-            TEST
+    </div>
+    <div id="collapse" class="collapse">
+        <div class="col-lg-3">
+            <img src="Images/hebergeur-image.jpg" height="230" width="310"/>
+        </div>
+        <div class="col-lg-3">
+            <label>Adresse : ???</label>
+        </div>
+        <br>
+        <br>
+        <div class="col-lg-8 divs">
+            <select>
+                <option selected>Chambre 1</option>
+                <option>Chambre 2</option>
+                <option>Chambre 3</option>
+            </select>
         </div>
     </div>
 </body>
-<script src="JS/Projet_JS.js"></script>
 </html>

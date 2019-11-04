@@ -1,8 +1,15 @@
 .headfoot{
     text-align: center;
 }
+
 .buttons{
-    height: 100px;
+    height: 75px;
     float:left;
-    font-size: 30px;
+}
+
+.divs{
+    border: 1px solid;
+}
+div{
+    margin: 1px;
 }
