@@ -30,7 +30,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tools/php73/php.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
@@ -79,6 +79,7 @@
       <workItem from="1572618590672" duration="1287000" />
       <workItem from="1572865896341" duration="12360000" />
       <workItem from="1573130189391" duration="4642000" />
+      <workItem from="1573153837652" duration="5980000" />
     </task>
     <servers />
   </component>

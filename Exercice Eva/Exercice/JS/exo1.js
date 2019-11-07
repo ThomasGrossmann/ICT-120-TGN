@@ -46,7 +46,8 @@ function Yes() {
 }
 
 function ClickText() {
-    Delete.style.display = "none"
+    var del = document.getElementById("Delete")
+    del.removeChild("Delete")
 }
 
 function Initiales() {
