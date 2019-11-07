@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Hébergements / Zoning B</title>
-    <link rel="stylesheet" type="text/css" href="CSS/Projet_CSS.css">
-    <script src="JS/Projet_JS.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/Projet_CSS.css">
+    <script src="JS/Projet_JS.js"></script>
 </head>
 <body>
     <header class="headfoot">
@@ -16,26 +16,33 @@
     </header>
     <div class="headfoot">
         <div class="btn-group btn-group-justified">
-            <a href="#" id="heb" class="btn btn-primary buttons" data-toggle="collapse" data-target="#collapse">Hébergements</a>
-            <a href="#" class="btn btn-primary buttons">Activités</a>
-            <a href="#" class="btn btn-primary buttons">Transports</a>
-            <a href="#" class="btn btn-primary buttons">Participants</a>
+            <a href="#" id="btnheb" class="btn btn-primary buttons" data-toggle="collapse" data-target="#collapse">Hébergements</a>
+            <a href="#" id="btnact" class="btn btn-primary buttons">Activités</a>
+            <a href="#" id="btntra" class="btn btn-primary buttons">Transports</a>
+            <a href="#" id="btnpar" class="btn btn-primary buttons">Participants</a>
         </div>
     </div>
     <div id="collapse" class="collapse">
-        <div class="col-lg-3 divs">
-            <img src="Images/hebergeur-image.jpg" height="230" width="450"/>
-            <textarea class="form-control">
-                fiefunseufnosefsnfueofsefnuoe fsoef soe fsefosef s fsef se fos fosf oesf oef o.
-            </textarea>
+        <div class="col-lg-3 col-md-3 divs h-100 w-100">
+            <img src="Images/hebergeur-image.jpg"/>
+            <textarea class="form-control maxmin">Ce voyage se déroulera en Angleterre, plus précisément à Londres.</textarea>
         </div>
         <label>Adresse : ???</label>
-        <div class="col-lg-9 divs">
+        <div class="col-lg-9 col-md-6 divs">
             <select>
                 <option selected>Chambre 1</option>
                 <option>Chambre 2</option>
                 <option>Chambre 3</option>
             </select>
+            <label>Membres de la chambre</label>
+            <div class="divs">
+                <ul>
+                    <li>Eleve 1</li>
+                    <li>Eleve 2</li>
+                    <li>Eleve 3</li>
+                </ul>
+            </div>
+            <button class="btn btn-primary">Retirer</button>
         </div>
     </div>
     <div class="divs footer">

@@ -23,3 +23,10 @@
     top: 40%;
     font-size: large;
 }
+
+.maxmin{
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 509px;
+    max-height: 509px;
+}
