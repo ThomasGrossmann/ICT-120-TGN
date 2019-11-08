@@ -19,7 +19,7 @@
     height: 75px;
 }
 
-.top50{
+.top40{
     top: 40%;
     font-size: large;
 }
@@ -29,4 +29,12 @@
     min-width: 100%;
     min-height: 509px;
     max-height: 509px;
+}
+
+.padding{
+    padding: 0px;
+}
+
+.right{
+    float: right;
 }
