@@ -27,8 +27,8 @@
 .maxmin{
     max-width: 100%;
     min-width: 100%;
-    min-height: 509px;
-    max-height: 509px;
+    min-height: 581px;
+    max-height: 581px;
 }
 
 .padding{
@@ -37,4 +37,32 @@
 
 .right{
     float: right;
+}
+
+.maxminliste{
+    max-width: 500px;
+    min-width: 500px;
+    min-height: 100px;
+    max-height: 100px;
+}
+
+.left{
+    float: left;
+}
+
+.invisible{
+    display: none;
+}
+
+.errorinput{
+    border: 2px solid red;
+    border-radius: 4px;
+}
+
+.divMoitier{
+    width: 37.5%;
+}
+
+.paddingBot{
+    padding-bottom: 5px;
 }

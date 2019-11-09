@@ -17,8 +17,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -46,13 +46,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Node.js.Projet_JS.js">
+    <configuration name="Projet_JS.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Projet/JS/Projet_JS.js" working-dir="$PROJECT_DIR$/Projet/JS">
+      <method v="2" />
+    </configuration>
     <configuration name="ICT-120" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$" port="8080">
       <method v="2" />
     </configuration>
     <configuration default="true" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$" port="8080">
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.Projet_JS.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -81,6 +89,7 @@
       <workItem from="1573130189391" duration="4642000" />
       <workItem from="1573153837652" duration="6063000" />
       <workItem from="1573230979009" duration="9067000" />
+      <workItem from="1573307715421" duration="23703000" />
     </task>
     <servers />
   </component>
