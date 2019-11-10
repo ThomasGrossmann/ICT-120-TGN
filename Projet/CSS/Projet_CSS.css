@@ -27,8 +27,8 @@
 .maxmin{
     max-width: 100%;
     min-width: 100%;
-    min-height: 581px;
-    max-height: 581px;
+    min-height: 504px;
+    max-height: 504px;
 }
 
 .padding{
@@ -40,8 +40,8 @@
 }
 
 .maxminliste{
-    max-width: 500px;
-    min-width: 500px;
+    max-width: 150px;
+    min-width: 150px;
     min-height: 100px;
     max-height: 100px;
 }
@@ -59,10 +59,13 @@
     border-radius: 4px;
 }
 
-.divMoitier{
-    width: 37.5%;
+.listeRecherche{
+    max-width: 500px;
+    min-width: 500px;
+    min-height: 100px;
+    max-height: 100px;
 }
 
-.paddingBot{
-    padding-bottom: 5px;
+.DivMoitier{
+    width: 37.5%;
 }

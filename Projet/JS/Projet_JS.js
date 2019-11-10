@@ -16,15 +16,15 @@ function init() {
 }
 
 function clickAct() {
-    alert("Cette section n'est pas développée ! Clickez sur Hébergements");
+    alert("Cette section n'est pas développée ! Cliquez sur Hébergements");
 }
 
 function clickTra() {
-    alert("Cette section n'est pas développée ! Clickez sur Hébergements");
+    alert("Cette section n'est pas développée ! Cliquez sur Hébergements");
 }
 
 function clickPar() {
-    alert("Cette section n'est pas développée ! Clickez sur Hébergements");
+    alert("Cette section n'est pas développée ! Cliquez sur Hébergements");
 }
 
 function ClickAjouter() {
@@ -44,14 +44,14 @@ function ClickAjouter() {
 }
 
 function ClickRetirer() {
-    var a = document.getElementById("listeEleve1").selectedIndex;
+    var a = document.getElementById("listeEleve1").selectedIndex
     if (a === -1){
         alert("Veuillez choisir un élève à retirer de la chambre.")
     }else{
         if(confirm("Voulez-vous vraiment retirer cet élève ?")){
-            var x = document.getElementById("listeEleve1");
-            x.remove(x.selectedIndex);
-            elevename.value = "";
+            var x = document.getElementById("listeEleve1")
+            x.remove(x.selectedIndex)
+            elevename.value = ""
         }
     }
 }
@@ -66,7 +66,13 @@ function ClickArr() {
     DivDepart.classList.add("invisible")
 }
 
-/*function AddChambre() {
+/*
+Je voulais faire en sorte de créer la liste d'élève lorsque l'on choisit les chambres grâce à un switch (voir fonction ci-dessous)
+(ça les crée normalement mais lorsque je choisis à nouveau la chambre, elle recrée la liste d'élèves une nouvelle fois)
+alors j'ai décidé de mettre cette fonctionnalité de côté par manque de temps
+
+
+function AddChambre() {
     var x = document.getElementById("chambres").selectedIndex;
     switch (x) {
         case 0:
