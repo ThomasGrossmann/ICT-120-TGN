@@ -1,134 +1,143 @@
+<!--
+    Programme : index.html
+    Auteur : Thomas Grossmann
+    Date : 10.11.2019
+-->
+
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>Hébergements / Zoning B</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    <link rel="stylesheet" type="text/css" href="CSS/Projet_CSS.css">
-    <script src="JS/Projet_JS.js"></script>
-</head>
-<!--La page n'a un visuel correct qu'en dimension lg-->
-<body>
-<header class="headfoot">
-    <h1>Hébergements -- Voyage d'études</h1>
-</header>
-<!--Cette div est une div avec les 4 boutons du menu-->
-<div class="headfoot">
-    <div class="btn-group btn-group-justified">
-        <a href="#" id="btnheb" class="btn btn-primary buttons" data-toggle="collapse" data-target="#collapse">Hébergements</a>
-        <a href="#" id="btnact" class="btn btn-primary buttons">Activités</a>
-        <a href="#" id="btntra" class="btn btn-primary buttons">Transports</a>
-        <a href="#" id="btnpar" class="btn btn-primary buttons">Participants</a>
-    </div>
-</div>
-<!--Cette div est la div principale du site qui apparaît lors du clic sur le bouton Hébergements-->
-<div id="collapse" class="collapse">
-    <div class="container col-lg-3 col-md-3 divs padding">
-        <img src="Images/hebergeur-image.jpg" class="img-responsive"/>
-        <textarea readonly class=" maxmin padding">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </textarea>
-    </div>
-    <label>Adresse : 66 Knightsbridge, Hyde Park, Londres, Royaume-Uni</label>
-    <!--Cette div contient les informations pour ajouter et retirer des élèves dans les chambres-->
-    <div class="container-fluid col-lg-9 col-6 divs">
-        <div class="col-lg-3">
-            <select id="chambres">
-                <option>Chambre 1</option>
-                <option>Chambre 2</option>
-                <option>Chambre 3</option>
-            </select>
-        </div>
-        <div class="col-lg-3">
-            <label>Membres de la chambre</label>
-        </div>
-        <div class="col-lg-7 headfoot">
-            <select class="maxminliste" multiple id="listeEleve1">
-                <option>Dmitri</option>
-                <option>Thomas</option>
-                <option>David</option>
-                <option>Pedro</option>
-            </select>
-            <!--Ces 2 select étaient là pour fonctionner avec la fonction AddChambre du JS
-            <select class="maxminliste invisible" multiple id="listeEleve2">
-
-            </select>
-            <select class="maxminliste invisible" multiple id="listeEleve3">
-
-            </select>-->
-        </div>
-        <div class="col-lg-3">
-            <div class="right">
-                <input type="text" id="elevename">
-            </div>
-            <div class="col-lg-3">
-                <button class="btn btn-primary right" id="btnret">Retirer</button><br><br>
-                <button class="btn btn-primary right" id="btnajo">Ajouter</button>
+    <head>
+        <meta charset="UTF-8">
+        <title>Hébergements / Zoning B</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        <link rel="stylesheet" type="text/css" href="CSS/Projet_CSS.css">
+        <script src="JS/Projet_JS.js"></script>
+    </head>
+    <!--La page n'a un visuel correct qu'en dimension lg (manque de temps pour faire correspondre en dimension md et sm...)-->
+    <body>
+        <header class="headfoot">
+            <h1>Hébergements -- Voyage d'études</h1>
+        </header>
+        <!--Cette div est une div avec les 4 boutons du menu-->
+        <div class="headfoot">
+            <div class="btn-group btn-group-justified">
+                <a href="#" id="btnheb" class="btn btn-primary buttons" data-toggle="collapse" data-target="#collapse">Hébergements</a>
+                <a href="#" id="btnact" class="btn btn-primary buttons">Activités</a>
+                <a href="#" id="btntra" class="btn btn-primary buttons">Transports</a>
+                <a href="#" id="btnpar" class="btn btn-primary buttons">Participants</a>
             </div>
         </div>
-    </div>
-    <!--Cette div contient les informations pour rechercher la chambre d'un élève-->
-    <div class="container-fluid col-lg-4 divs left DivMoitier">
-        <label>Rechercher</label>
-        <input type="text" id="search">
-        <select multiple class="listeRecherche" id="listeSearch">
-        </select>
-    </div>
-    <!--Cette div contient les informations pour afficher les checklist de départ et d'arrivée-->
-    <div class="container-fluid col-lg-4 divs left DivMoitier"><br>
-        <div class="col-lg-2">
-            <button class="btn btn-primary" id="checkDep">Checklist<br>de départ</button>
-            <br><br>
-            <button class="btn btn-primary" id="checkArr">Checklist<br> d'arrivée</button>
-            <br><br>
+        <!--Cette div est la div principale du site qui apparaît lors du clic sur le bouton Hébergements-->
+        <div id="collapse" class="collapse">
+            <div class="container col-lg-3 col-md-3 divs padding Marge">
+                <img src="Images/hebergeur-image.jpg" class="img-responsive"/>
+                <textarea readonly class=" maxmin padding">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </textarea>
+            </div>
+            <label>Adresse : 66 Knightsbridge, Hyde Park, Londres, Royaume-Uni</label>
+            <!--Cette div contient les informations pour ajouter et retirer des élèves dans les chambres-->
+            <div class="container-fluid col-lg-9 col-6 divs Marge">
+                <div class="col-lg-3">
+                    <select id="chambres">
+                        <option selected>Chambres :</option>
+                        <option>Chambre 1</option>
+                        <option>Chambre 2</option>
+                        <option>Chambre 3</option>
+                    </select>
+                </div>
+                <div class="col-lg-3">
+                    <label>Membres de la chambre</label>
+                </div>
+                <div class="col-lg-7 headfoot">
+                    <select class="maxminliste invisible" multiple id="listeEleve1">
+                        <option>Dmitri</option>
+                        <option>Thomas</option>
+                        <option>David</option>
+                        <option>Pedro</option>
+                    </select>
+                    <select class="maxminliste invisible" multiple id="listeEleve2">
+                        <option>Benoît</option>
+                        <option>Miguel</option>
+                        <option>Johnny</option>
+                        <option>Marwan</option>
+                    </select>
+                    <select class="maxminliste invisible" multiple id="listeEleve3">
+                        <option>Samuel</option>
+                        <option>Simon</option>
+                        <option>Altin</option>
+                    </select>
+                </div>
+                <div class="col-lg-3">
+                    <div class="right">
+                        <input type="text" id="elevename" disabled>
+                    </div>
+                    <div class="col-lg-3">
+                        <button class="btn btn-primary right" id="btnret">Retirer</button><br><br>
+                        <button class="btn btn-primary right" id="btnajo">Ajouter</button>
+                    </div>
+                </div>
+            </div>
+            <!--Cette div contient les informations pour rechercher la chambre d'un élève-->
+            <div class="container-fluid col-lg-4 divs left DivMoitier">
+                <label>Rechercher</label>
+                <input type="text" id="search">
+                <select multiple class="listeRecherche" id="listeSearch">
+                </select>
+            </div>
+            <!--Cette div contient les informations pour afficher les checklist de départ et d'arrivée-->
+            <div class="container-fluid col-lg-4 divs left DivMoitier"><br>
+                <div class="col-lg-2">
+                    <button class="btn btn-primary" id="checkDep">Checklist<br>de départ</button>
+                    <br><br>
+                    <button class="btn btn-primary" id="checkArr">Checklist<br> d'arrivée</button>
+                    <br><br>
+                </div>
+                <div class="form-group invisible right" id="DivDepart">
+                    <div class="custom-checkbox">
+                        <input type="checkbox" id="V">Valise
+                    </div>
+                    <div class="custom-checkbox">
+                        <input type="checkbox" id="VEC">Vêtements en conséquence
+                    </div>
+                    <div class="custom-checkbox">
+                        <input type="checkbox" id="ADT">Affaires de toilette
+                    </div>
+                    <div class="custom-checkbox">
+                        <input type="checkbox" id="PASS">Passeport
+                    </div>
+                    <div class="custom-checkbox">
+                        <input type="checkbox" id="ADP">Argent de poche
+                    </div>
+                </div>
+                <div class="form-group invisible right" id="DivArrivee">
+                    <div class="custom-checkbox">
+                        <input type="checkbox" id="LEE">Lits en état
+                    </div>
+                    <div class="custom-checkbox">
+                        <input type="checkbox" id="PDG">Pas de dégâts
+                    </div>
+                    <div class="custom-checkbox">
+                        <input type="checkbox" id="P">Passeport
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="form-group invisible right" id="DivDepart">
-            <div class="custom-checkbox">
-                <input type="checkbox" id="V">Valise
+        <!--Cette div est le footer de la page avec le lien vers le site du cpnv et quelques liens plus ou moins utiles-->
+        <div class="divs footer position-relative">
+            <div class="col-lg-3 headfoot top40">
+                <a href="https://www.cpnv.ch/">Cpnv.ch</a>
             </div>
-            <div class="custom-checkbox">
-                <input type="checkbox" id="VEC">Vêtements en conséquence
-            </div>
-            <div class="custom-checkbox">
-                <input type="checkbox" id="ADT">Affaires de toilette
-            </div>
-            <div class="custom-checkbox">
-                <input type="checkbox" id="PASS">Passeport
-            </div>
-            <div class="custom-checkbox">
-                <input type="checkbox" id="ADP">Argent de poche
+            <!--Cette div contient les 3 icônes du footer-->
+            <div class="top40 right">
+                <a href="https://www.google.com/maps/place/Mandarin+Oriental+Hyde+Park,+London/@51.502273,-0.1620562,17z/data=!3m1!4b1!4m8!3m7!1s0x48760539981c821b:0x23f97212261f86dc!5m2!4m1!1i2!8m2!3d51.502273!4d-0.1598675"><img src="Images/googlemaps.png" height="45" width="45"/></a>
+                <a href="https://www.facebook.com/cpnv.ch/?ref=br_rs"><img src="Images/facebook.png" height="45" width="45"/></a>
+                <a href="https://twitter.com/CPNV_CH"><img src="Images/twitter.png" height="45" width="45"/></a>
             </div>
         </div>
-        <div class="form-group invisible right" id="DivArrivee">
-            <div class="custom-checkbox">
-                <input type="checkbox" id="LEE">Lits en état
-            </div>
-            <div class="custom-checkbox">
-                <input type="checkbox" id="PDG">Pas de dégâts
-            </div>
-            <div class="custom-checkbox">
-                <input type="checkbox" id="P">Passeport
-            </div>
-        </div>
-    </div>
-</div>
-<!--Cette div est le footer de la page avec le lien vers le site du cpnv et quelques liens plus ou moins utiles-->
-<div class="divs footer position-relative">
-    <div class="col-lg-3 headfoot top40">
-        <a href="https://www.cpnv.ch/">Cpnv.ch</a>
-    </div>
-    <!--Cette div contient les 3 icônes du footer-->
-    <div class="top40 right">
-        <a href="https://www.google.com/maps/place/Mandarin+Oriental+Hyde+Park,+London/@51.502273,-0.1620562,17z/data=!3m1!4b1!4m8!3m7!1s0x48760539981c821b:0x23f97212261f86dc!5m2!4m1!1i2!8m2!3d51.502273!4d-0.1598675"><img
-                src="Images/googlemaps.png" height="45" width="45"/></a>
-        <a href="https://www.facebook.com/cpnv.ch/?ref=br_rs"><img src="Images/facebook.png" height="45"
-                                                                   width="45"/></a>
-        <a href="https://twitter.com/CPNV_CH"><img src="Images/twitter.png" height="45" width="45"/></a>
-    </div>
-</div>
-</body>
+    </body>
 </html>

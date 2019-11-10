@@ -46,8 +46,10 @@ function Yes() {
 }
 
 function ClickText() {
-    var del = document.getElementById("Delete")
-    del.removeChild("Delete")
+    var node = document.getElementById("DivDelete");
+    if (node.parentNode) {
+        node.parentNode.removeChild(node);
+    }
 }
 
 function Initiales() {

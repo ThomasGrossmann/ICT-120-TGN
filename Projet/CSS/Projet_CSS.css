@@ -1,3 +1,9 @@
+/*
+    Programme : Projet_CSS
+    Auteur : Thomas Grossmann
+    Date : 10.11.2019
+*/
+
 .headfoot{
     text-align: center;
 }
@@ -68,4 +74,8 @@
 
 .DivMoitier{
     width: 37.5%;
+}
+
+.Marge{
+    margin-bottom: 40px;
 }
