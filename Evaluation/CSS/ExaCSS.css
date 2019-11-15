@@ -1,0 +1,18 @@
+/*
+    Projet : Examen ICT 120
+    Auteur : Thomas Grossmann
+    Date : 15.11.2019
+*/
+
+.divInput{
+    width: 10%;
+}
+
+.invisible{
+    display: none;
+}
+
+.ErrorInput{
+    color: white;
+    background-color: red;
+}

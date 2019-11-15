@@ -1,0 +1,28 @@
+<!--
+Projet : Examen ICT 120
+Auteur : Thomas Grossmann
+Date : 15.11.2019
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Motivation</title>
+    <link rel="stylesheet" href="CSS/ExaCSS.css">
+    <script src="JS/ExaMotivationJS.js"></script>
+    <script src="JS/ExaIndexJS.js"></script>
+</head>
+<body>
+<div class="container-fluid flex-column">
+    <h2>Bonjour <span id="prenom">(prénom)</span> <span id="nom">(nom)</span></h2>
+    <form action="thankyou.html">
+        <label>Veuillez décrire ci-dessous votre motivation à nous rejoindre, en au minimum 30 caractères et au maximum 144</label><br>
+        <textarea cols="60" rows="3"></textarea>
+        <div class="invisible divInput">Cette description est trop courte</div>
+        <div id="CarLeft">Il vous reste 144 caractères</div>
+        <input type="submit" value="Ok" id="btnOK" class="invisible">
+    </form>
+</div>
+</body>
+</html>

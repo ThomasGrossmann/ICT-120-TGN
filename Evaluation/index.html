@@ -1,0 +1,26 @@
+<!--
+    Projet : Examen ICT 120
+    Auteur : Thomas Grossmann
+    Date : 15.11.2019
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="CSS/ExaCSS.css">
+    <script src="JS/ExaIndexJS.js"></script>
+    <!--<script src="JS/ExaMotivationJS.js"></script>-->
+</head>
+<body>
+    <h2>Inscription au tchoukball club Ste-Croix</h2>
+    <form action="motivation.html">
+        <label>Prénom</label><input type="text" name="txtFirstName" id="txtFirstName"><br><div class="invisible divInput" id="FirstnameShort">Invalide: trop court</div>
+        <label>Nom</label><input type="text" name="txtLastName" id="txtLastName"><br><div class="invisible divInput" id="LastnameShort">Invalide: trop court</div>
+        <label>Mot de passe</label><input type="password" id="Password"><br><div class="invisible divInput" id="PasswordMin">Invalide: minimum 6 caractères</div>
+        <label>Confirmation</label><input type="password" id="PasswordConfirm"><br><div class="invisible divInput" id="PasswordDif">Invalide: différent</div>
+        <input type="submit" value="Envoyer" id="btnEnvoyer" disabled>
+    </form>
+</body>
+</html>
